@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2013 The CyanogenMod Project
+# Copyright 2012 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,12 +14,5 @@
 # limitations under the License.
 #
 
-include device/lge/g2-common/BoardConfigCommon.mk
-
-TARGET_KERNEL_CONFIG := cyanogenmod_d802_defconfig
-
-TARGET_OTA_ASSERT_DEVICE := d802,g2,galbi,d800
-
-G2_DTS_TARGET := msm8974-g2-open_com
-
-DEVICE_RESOLUTION := 1080x1920
+add_lunch_combo full_d802-userdebug
+add_lunch combo omni_d802-userdebug
